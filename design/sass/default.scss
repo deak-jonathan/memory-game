@@ -124,6 +124,7 @@ body {
           height: 100%;
           backface-visibility: hidden; // Permet de cacher l'arriere de la face qui sera afficher
           -webkit-backface-visibility: hidden;
+          transform: rotateX(0deg);
         }
         .front-face {
           background-color: $backgroundCard;
