@@ -73,35 +73,35 @@ btnTheme.forEach((btn) => {
       backFace.forEach((face) => {
         face.style.background = marvel[0]["backgroundCard"];
       });
-      title.setAttribute("src", "/assets/marvel/marvel.png");
+      title.setAttribute("src", "marvel/marvel.png");
       addCard(marvel);
     } else if (btn.getAttribute("name") === "starwars") {
       document.body.style.background = starwars[0]["background"];
       backFace.forEach((face) => {
         face.style.background = starwars[0]["backgroundCard"];
       });
-      title.setAttribute("src", "/assets/starwars/starwars.png");
+      title.setAttribute("src", "starwars/starwars.png");
       addCard(starwars);
     } else if (btn.getAttribute("name") === "langage") {
       document.body.style.background = langage[0]["background"];
       backFace.forEach((face) => {
         face.style.background = langage[0]["backgroundCard"];
       });
-      title.setAttribute("src", "/assets/langage/code.png");
+      title.setAttribute("src", "langage/code.png");
       addCard(langage);
     } else if (btn.getAttribute("name") === "footballTeam") {
       document.body.style.background = footballTeam[0]["background"];
       backFace.forEach((face) => {
         face.style.background = footballTeam[0]["backgroundCard"];
       });
-      title.setAttribute("src", "/assets/footballTeam/uefa.png");
+      title.setAttribute("src", "footballTeam/uefa.png");
       addCard(footballTeam);
     } else if (btn.getAttribute("name") === "company") {
       document.body.style.background = company[0]["background"];
       backFace.forEach((face) => {
         face.style.background = company[0]["backgroundCard"];
       });
-      title.setAttribute("src", "/assets/company/gafam.png");
+      title.setAttribute("src", "company/gafam.png");
       addCard(company);
     }
   });
