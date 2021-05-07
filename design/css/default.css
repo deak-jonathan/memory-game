@@ -1,0 +1,137 @@
+/*Variables*/
+body .start-game .box-start .choice .start, .filter .endgame .restart {
+  width: 250px;
+  height: 100px;
+  font-size: 3rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s; }
+
+body .start-game .box-start .choice .start:hover, .filter .endgame .restart:hover {
+  background-color: white; }
+
+/*CONTENT*/
+html {
+  font-size: 62.5%; }
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amatic SC", sans-serif; }
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 100vw;
+  background: #ef719b;
+  background: linear-gradient(90deg, #f9b06c 0%, #f67e7e 100%);
+  background-repeat: no-repeat; }
+  body .start-game {
+    position: absolute;
+    flex-direction: column;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.9); }
+    body .start-game .box-start {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      color: white; }
+      body .start-game .box-start h1 {
+        font-size: 10rem; }
+      body .start-game .box-start h2 {
+        font-size: 5rem; }
+      body .start-game .box-start .choice {
+        display: flex;
+        grid-template: 1fr/1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center; }
+        body .start-game .box-start .choice .start img {
+          width: 150px; }
+  body .title {
+    width: 200px; }
+  body .grid {
+    display: grid;
+    grid-template: repeat(4, 1fr)/repeat(4, 1fr);
+    width: 60%;
+    height: 80%;
+    background-color: #fef8e8;
+    border-radius: 10px;
+    padding: 10px; }
+    body .grid .card {
+      perspective: 1000px;
+      background-color: transparent;
+      margin: 5px; }
+      body .grid .card .double-face {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        cursor: pointer;
+        transform-style: preserve-3d; }
+        body .grid .card .double-face .front-face,
+        body .grid .card .double-face .back-face {
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden; }
+        body .grid .card .double-face .front-face {
+          background-color: #333333;
+          transform: rotateY(180deg); }
+          body .grid .card .double-face .front-face .img-face {
+            width: 40%; }
+        body .grid .card .double-face .back-face {
+          background: linear-gradient(45deg, #ff0f7b 0%, #f89c2a 100%); }
+
+.active {
+  transform: rotateY(180deg); }
+
+.filter {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: transparent;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0; }
+  .filter .endgame {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px; }
+    .filter .endgame p {
+      font-size: 5rem;
+      color: white; }
+
+@keyframes title-translate {
+  100% {
+    transform: translateY(50%); } }
+
+/*# sourceMappingURL=default.css.map */
